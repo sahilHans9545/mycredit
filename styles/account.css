@@ -1,0 +1,23 @@
+:root {
+    --primary-green: #008060;
+    --base-lightest: #F0F0F0;
+    --gray: #E6E6E6;
+}
+
+.main{
+    /* background-color: var(--base-lightest); */
+}
+
+.required-field{
+    color: #D83933;
+    position: relative;
+    top: -4px;
+}
+
+li .grey-circle{
+    width: 50px;
+    height: 50px;
+    background-color: #DCDEE0;
+    border-radius: 50%;
+    flex-shrink: 0;
+}

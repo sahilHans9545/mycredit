@@ -1,0 +1,159 @@
+:root{
+    --primary-green:#008060;
+    --base-lightest:#F0F0F0;
+    --gray:#E6E6E6;
+    --blue-link:#005EA2;
+    --base-dark:#1B1B1B;
+    --base-light:#A9AEB1;
+}
+
+.bg-primary-green{
+    background-color: var(--primary-green);
+}
+
+.bg-gray{
+    background-color: var(--gray);
+}
+
+.bg-base-lightest{
+    background-color: var(--base-lightest);
+}
+
+.blue-link{
+    color: var(--blue-link);
+    border-bottom: 1.5px solid var(--blue-link);
+    font-weight: 500;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.primary-green-btn{
+    background-color: var(--primary-green);
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-green);
+}
+
+.trans-green-btn{
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    background-color: transparent;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 4px;
+
+}
+
+input[type='checkbox']:checked {
+    accent-color: var(--primary-green);
+}
+
+
+
+
+/* navbar */
+header{
+    color: #565C65;
+}
+nav{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 14px;
+    color: #565C65;
+}
+
+
+.active-navLink{
+    color: var(--blue-link);
+    position: relative;
+}
+
+.active-navLink::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--primary-green);
+    height: 3px;
+    width: 100%;
+}
+
+nav .logo img{
+    height: 45px;
+}
+
+nav .user-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: #AEB1B6;
+    border-radius: 50%;
+}
+
+
+/* menuBar */
+header .menuBar{
+    border-bottom: 1px solid var(--base-lightest);
+
+}
+
+header .menuBar a{
+        color: #565C65;
+}
+
+
+/* footer */
+
+footer{
+    color: var(--base-dark);
+}
+
+footer a{
+    color: var(--base-dark);
+}
+
+footer ul li{
+    font-weight: 700;
+}
+
+.question-mark{
+    background-color: var(--primary-green);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--base-lightest);
+    
+}
+
+
+footer .social-icons li{
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .social-icons li img{
+    width: 30px;
+    height: 30px;
+}
+
+footer .logo img{
+    width: 240px;
+}

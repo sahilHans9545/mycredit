@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesone icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mainTable.css">
+    <title>My Credit</title>
+
+    <style>
+        table td:first-child,
+        table th:first-child {
+            width: 50%;
+            min-width: 40px;
+            text-align: start;
+            padding: 11px 11px 11px 22px;
+        }
+
+        .main-table {
+            border-bottom: 6px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="d-flex justify-content-between align-items-center px-md-5 py-1">
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <div>
+                <ul class="list-unstyled d-flex gap-4 mb-0 ">
+                    <li class="active-navLink mx-3">Credit Repair</li>
+                    <li class="mx-3">Loan</li>
+                    <li class="mx-3">Shop</li>
+                </ul>
+            </div>
+            <div class="user-avatar text-white">V</div>
+        </nav>
+        <div class="menuBar d-flex justify-content-between align-items-center  px-md-5 py-3">
+            <ul class="list-unstyled d-flex gap-4 mb-0 ">
+                <li class="ms-0 mx-3"><a href="identityIq.html"> IdentityIQ </a></li>
+                <li class="mx-3"><a href=""> Overview</a></li>
+                <li class="mx-3"><a href="disputeManager.html"> Dispute Manager</a></li>
+                <li class="mx-3"><a href="creditors.html"> Creditors</a></li>
+                <li class="mx-3"><a href=""> Credit Score</a></li>
+                <li class="mx-3"><a href=""> Documents</a></li>
+                <li class="active-navLink mx-3"><a href=""> Letter Library</a></li>
+                <li class="mx-3"><a href="disputeLetters.html"> Dispute Letters</a></li>
+            </ul>
+            <button class="primary-green-btn">Start Dispute</button>
+        </div>
+    </header>
+
+    <main class="my-5 px-5 mx-5">
+        <div class="d-flex align-items-center justify-content-between gap-5">
+            <input type="text" placeholder="search">
+            <div class="filters d-flex align-items-center gap-2">
+                Filter by
+                <div>Letter Type &nbsp; <span><i class="fa-sharp fa-solid fa-xmark"></i></span></div>
+                <div>Created Date +2 &nbsp; <span><i class="fa-sharp fa-solid fa-xmark"></i></span></div>
+            </div>
+        </div>
+        <div class="main-table overflow-auto mt-3">
+            <table>
+                <thead>
+                    <th>Letter Title</th>
+                    <th>Created Date</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TransUnion</td>
+                        <td>2022-02-21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Experian</td>
+                        <td>2022-06-29</td>
+                    </tr>
+
+                    <tr>
+                        <td>Experian</td>
+                        <td>2022-04-23</td>
+                    </tr>
+
+                    <tr>
+                        <td>TransUnion</td>
+                        <td>2022-02-22</td>
+                    </tr>
+
+                    <tr>
+                        <td>TransUnion</td>
+                        <td>2022-02-04</td>
+                    </tr>
+
+                    <tr>
+                        <td>Experian</td>
+                        <td>2022-03-22</td>
+                    </tr>
+
+                    <tr>
+                        <td>Experian</td>
+                        <td>2022-02-13</td>
+                    </tr>
+
+                    <tr>
+                        <td>TransUnion</td>
+                        <td>2022-01-16</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="bg-base-lightest p-4">
+            <!-- <pre> -->
+            <p>> Validate Account</p>
+
+            <p>TRUST REC SV</p>
+
+            <p>{address_information}</p>
+
+            <br><br>
+
+            <p>Account Number: 116195XXXX</p>
+
+            <p>PLEASE REMOVE OR I WILL CONTACT FCRA. Furthermore, I am allowed under the HIPAA law (Health Insurance
+                Portability and
+                Accountability Act of 1996) to protect my privacy and medical records from third parties. I do not
+                recall
+                giving
+                permission to [name of provider] for them to release my medical information to a third party. I
+                understand
+                that the
+                HIPAA does allow for limited information about me but any details may only be revealed with the patients
+                authorization,
+                therefore my request is twofold and as follows: Validation of Debt and HIPAA authorization - Please
+                provide
+                a breakdown
+                of fees including any and all collection costs and medical charges - Please provide a copy of my
+                signature
+                with the
+                provider of service to release my medical information to you - Immediately cease any credit bureau
+                reporting
+                until debt
+                has been validated by me. ------ 'I am unaware of this collection, please validate or remove this
+                account.
+                ----- Why are
+                you not reporting the complete information of this collection When I was first delinquent with the
+                original
+                creditor.
+                Delete this inaccurate collection immediately. ----- This account may have been reported to collection
+                in
+                error and
+                should not be showing up on my report. ------ Can you prove this is Correct information you are
+                reporting on
+                my credit
+                report and it belong to me? If not, remove the collection immediately! ---- Why are you reporting this
+                collection where
+                I do not believe I have a financial obligation to this company, verify or delete this account.</p>
+
+            <pre>
+{client_first_name} {client_last_name}
+{client_address}
+{ss_number}
+{bdate}
+
+{curr_date}
+            </pre>
+
+
+            ChexSystems
+            Attn: Consumer Relations
+            7805 Hudson Road, Suite 100
+            Woodbury, MN 55125
+
+            <p> By phone at 800-428-9623 or fax at 602-659-2197 </p>
+
+            <p>
+                To Whom It May Concern, <br>
+
+                When I recently tried to open a checking account, I was informed that I had negative entries in my
+                ChexSystems record.
+
+                To my knowledge, have never had non-sufficient funds and I am not aware of any negative entries. Kindly
+                forward me a
+                copy of my ChexSystems record so that I may verify its accuracy.</p>
+
+            <pre>
+Kind regards,
+
+_________________________________________
+
+
+{client_first_name} {client_last_name}
+ss# {ss_number}
+            </pre>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bg-base-lightest d-flex justify-content-between align-items-center px-5 py-1">
+            <ul class="d-flex list-unstyled mb-0">
+                <li class="px-3">Documentations</li>
+                <li class="px-3">Features</li>
+                <li class="px-3">Getting started</li>
+                <li class="px-3">About us</li>
+            </ul>
+
+            <div class="question-mark text-white fs-4">
+                ?
+            </div>
+        </div>
+        <div class="bg-gray d-flex justify-content-between align-items-center px-5 py-3">
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div>
+                <div class="social-icons">
+                    <ul class="list-unstyled d-flex justify-content-end gap-2">
+                        <li><a href=""><img src="./images/icons/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/icons/Twitter.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/icons/youtube.png" alt=""></a></a></li>
+                        <li><a href=""><img src="./images/icons/instagram.png" alt=""></a></a></li>
+                        <li><a href=""><img src="./images/icons/wifi.png" alt=""></a></a></li>
+                    </ul>
+                </div>
+                <p class="fw-bold fs-5 mb-0 mt-2 text-end">Contact Center</p>
+                <div>
+                    <span>(800) CALL-CRED</span>
+                    &nbsp;&nbsp;
+                    <span><a href="info@mycreditapprove.com"
+                            class="text-decoration-underline">info@mycreditapprove.com</a></span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
