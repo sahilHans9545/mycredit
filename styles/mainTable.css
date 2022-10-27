@@ -81,3 +81,9 @@ select{
 .filters label{
     color: var(--base-light);
 }
+
+@media screen and (max-width:768px) {
+    input.search{
+        width: 100%;
+    }
+}
