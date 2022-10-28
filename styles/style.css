@@ -58,6 +58,8 @@ a{
 
 }
 
+
+
 input[type='checkbox']:checked {
     accent-color: var(--primary-green);
 }
@@ -185,22 +187,53 @@ footer .logo img{
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1199px) {
     .mobile-menuBar{
         position: fixed;
         top: 0;
-        right: 0;
-        background-color: var(--base-lightest);
+        right: -100%;
+        background-color: #FFFFFF;
         padding: 15px ;
         padding-top: 70px !important;
         height: 100vh;
         overflow: auto;
-        display: none;
         min-width: 250px;
+        width: 250px;
+        transition: all 0.5s;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
     }
 
-    .user-avatar{
-        margin-left: auto;
-        margin-right: 15px;
+    .show-menu {
+        right: 0;
     }
+
+    
+        
+}
+
+.menuBtn{
+        padding: 6px 8px;
+        background: var(--primary-green);
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+        .user-avatar {
+            margin-left: auto;
+            margin-right: 13px;
+        }
+    
+        .mobile-w-100 {
+            width: 100%;
+        }
 }
