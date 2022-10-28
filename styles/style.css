@@ -100,7 +100,7 @@ nav{
 }
 
 nav .logo img{
-    height: 45px;
+    height: 50px;
 }
 
 nav .user-avatar{
@@ -172,14 +172,10 @@ footer .logo img{
 
 
 @media screen and (max-width:576px) {
-    /* header{
-        display: none !important;
-    } */
-
-    footer{
-        /* display: none !important; */
+    nav .logo img {
+            height: 45px;
     }
-
+    
     nav .user-avatar{
         width: 35px;
         height: 35px;
