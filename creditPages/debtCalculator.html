@@ -43,6 +43,13 @@
         left: 5px;
         transform: translateY(-50%);
     }
+
+    @media screen and (max-width:1400px) {
+        .menuBar ul {
+            gap: 25px !important;
+            flex-wrap: wrap;
+        }
+    }
 </style>
 
 <body>
@@ -84,7 +91,7 @@
                 <li class="mx-3 mx-md-0"><a href="disputeLetters.html"> Dispute Letters</a></li>
             </ul>
             <br>
-            <button class="primary-green-btn my-3 mx-3 m-lg-0">Start Dispute</button>
+            <button class="primary-green-btn my-3 m-lg-0">Start Dispute</button>
         </div>
     </header>
 
@@ -93,7 +100,7 @@
 
     <div class="section container mt-5">
         <h5 class="fw-bold bg-base-lightest p-2">Results</h5>
-        <div class="mt-5 col-md-5">
+        <div class="mt-5 col-md-7 col-xl-5">
             <div class="d-flex justify-content-between gap-2 mb-1">
                 <h5 class="fw-bold">Debt-to-Income (DTI) Ratio: <span class="primary-green-text">3%</span> </h5>
                 <p>Your DTI ratio is good.</p>
@@ -134,7 +141,7 @@
 
         <div class="mt-4">
             <h4 class="fw-bold">Income Breakdown</h4>
-            <img src="../images/incomeBreakdown.png" alt="">
+            <img src="../images/incomeBreakdown.png" alt="" class="img-fluid">
             <p>If you live in the U.S. and have plans to purchase a house after halted payments towards preexisting
                 rent and mortgage,
                 you can spend up to $14,000 per month on the new house, which is equivalent to a house valued up to

@@ -152,6 +152,7 @@ nav .user-avatar{
 /* menuBar */
 header .menuBar{
     border-bottom: 1px solid var(--base-lightest);
+    z-index: 1;
 
 }
 
@@ -207,6 +208,11 @@ footer .logo img{
 
 
 @media screen and (max-width:576px) {
+    
+    html{
+        font-size: 14px;
+    }
+
     nav .logo img {
             height: 45px;
     }
