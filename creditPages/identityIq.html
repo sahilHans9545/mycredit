@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/account.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/myCredit/account.css">
     <title>My Credit</title>
 </head>
 
@@ -19,7 +19,7 @@
     <header>
         <nav class="">
             <div class="nav-shadow d-flex justify-content-between align-items-center  px-md-5 px-3 py-1">
-                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <div class="logo"><img src="../images/logo.png" alt=""></div>
                 <div class="d-none d-md-block">
                     <ul class="list-unstyled d-flex gap-4 mb-0 ">
                         <li class="active-navLink mx-3"><a>Credit Repair</a></li>
@@ -38,86 +38,73 @@
                 </ul>
             </div>
         </nav>
+        <div class="menuBar d-flex justify-content-between align-items-center  px-md-5 py-4">
+            <ul class="list-unstyled d-flex gap-4 mb-0 ">
+                <li class="active-navLink mx-3"><a href="./identityIq.html">IdentityIQ</a></li>
+                <!-- <li class="px-3">Overview</li>
+                <li class="active-navLink px-3">Dispute Manager</li>
+                <li class="px-3">Creditors</li>
+                <li class="px-3">Credit Score</li>
+                <li class="px-3">Documents</li>
+                <li class="px-3">Letter Library</li>
+                <li class="px-3">Dispute Letters</li> -->
+            </ul>
+            <!-- <button class="primary-green-btn">Start Dispute</button> -->
+        </div>
     </header>
 
     <!-- <main class="my-5"> -->
-    <div class="main container mb-5 p-5 px-0 px-md-0 px-xl-4">
-        <div class="px-xl-5 py-5 bg-base-lightest">
+    <div class="main container mb-5 py-5 pt-4 pt-md-5 px-0 px-md-0 px-xl-5">
+        <div class="px-xl-0 py-5 bg-base-lightest">
 
 
-            <div class="row px-lg-0 mx-0">
-                <div class="col-md-6 col-lg-6 px-4 ">
+            <div class="row px-lg-5 mx-0 ">
+                <div class="col-md-6 col-lg-7 px-3 px-lg-5 ps-lg-5 ">
                     <div class="bg-white p-5 p-md-3 p-lg-5">
 
-                        <h2 class="fw-bold">Sign In</h2>
-                        <p class="mt-3">Log in to your account.</p>
+                        <h2><img src="../images/identityIq.png" alt="" class="img-fluid"></h2>
                         <p><span class="required-field">*</span> indicates a required field.</p>
                         <form action="">
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email address <span
+                            <div class="mb-4">.
+                                <label for="username" class="form-label">Username <span
                                         class="required-field">*</span></label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="text" class="form-control" id="username" required>
                             </div>
 
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <label for="password" class="form-label">Password <span
                                         class="required-field">*</span></label>
                                 <input type="password" class="form-control" id="password" required>
                             </div>
 
-                            <p>
-                                <a href="" class="blue-link">Forgot password</a>
-                            </p>
 
+                            <div class="mb-4">
+                                <label for="SSN" class="form-label">Last 4 digits of Your SSN <span
+                                        class="required-field">*</span></label>
+                                <input type="text" class="form-control" id="SSN" required>
+                            </div>
 
-
-                            <p><input type="checkbox" name="" id="">&nbsp; By signing up, I agree to the <a href=""
-                                    class="blue-link">terms</a></p>
-
-                            <div>
-                                <button type="submit" class="primary-green-btn w-100">Login</button>
+                            <div class="mt-4">
+                                <button type="submit" class="primary-green-btn">Begin Import </button>
                             </div>
 
                         </form>
 
                     </div>
 
-                    <p class="text-center mt-3">Don’t have an account? <span class="blue-link">Sign Up.</span></p>
+
 
                 </div>
-                <div class="col-md-6 col-lg-6 mt-3 mt-md-0 px-4 px-md-3 px-lg-4">
-                    <p class="mt-4 px-2 px-md-0"><strong>24/7 Online Client/Affiliate Management Portal
+                <div class="col-md-6 col-lg-5 mt-3 mt-md-0 px-5 px-md-4">
+                    <p class="mt-4"><strong>If you do not have a IdentityIQ account
                         </strong></p>
-                    <p class="px-2 px-md-0">Advanced Features of your My Credit Approve to Credit Client Portal</p>
+                    <p>Get all 3 credit reports - For $1</p>
 
-                    <ul class="list-unstyled px-2 px-md-0">
-                        <li class="d-flex align-items-center gap-3 gap-lg-4 mt-4 py-1">
-                            <div class="grey-circle"></div>
-                            <div><strong>Easy Online Access -</strong> Customers Can Check Status 24/7.</div>
+                    <p>Inlcudes FICO scores</p>
 
-                        </li>
-                        <li class="d-flex align-items-center gap-3 gap-lg-4 mt-4 py-1">
-                            <div class="grey-circle"></div>
-                            <div><strong>Electronic Signature -</strong>Members can view and electronically sign your
-                                service agreement.</div>
+                    <button class="trans-green-btn px-5">Get all 3 reports for a $1</button>
 
-                        </li>
 
-                        <li class="d-flex align-items-center gap-3 gap-lg-4 mt-4 py-1">
-                            <div class="grey-circle"></div>
-                            <div><strong>Easy to Understand -</strong>Charts and Graphs, allowing you various options
-                                for
-                                viewing credit report and dispute status.</div>
-
-                        </li>
-
-                        <li class="d-flex align-items-center gap-4 mt-4 py-1">
-                            <div class="grey-circle"></div>
-                            <div><strong>Easy Engagement -</strong> Easy to use interface to get your questions answered
-                                when you need it.</div>
-
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -140,16 +127,16 @@
         </div>
         <div class="bg-gray d-flex justify-content-between align-items-center flex-column flex-sm-row px-5 py-3">
             <div class="footer-logo">
-                <img src="./images/logo.png" alt="">
+                <img src="../images/logo.png" alt="">
             </div>
             <div class="mt-3 mt-md-0">
                 <div class="social-icons">
                     <ul class="list-unstyled d-flex justify-content-center justify-content-sm-end gap-2">
-                        <li><a href=""><img src="./images/icons/facebook.png" alt=""></a></li>
-                        <li><a href=""><img src="./images/icons/Twitter.png" alt=""></a></li>
-                        <li><a href=""><img src="./images/icons/youtube.png" alt=""></a></a></li>
-                        <li><a href=""><img src="./images/icons/instagram.png" alt=""></a></a></li>
-                        <li><a href=""><img src="./images/icons/wifi.png" alt=""></a></a></li>
+                        <li><a href=""><img src="../images/icons/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="../images/icons/Twitter.png" alt=""></a></li>
+                        <li><a href=""><img src="../images/icons/youtube.png" alt=""></a></a></li>
+                        <li><a href=""><img src="../images/icons/instagram.png" alt=""></a></a></li>
+                        <li><a href=""><img src="../images/icons/wifi.png" alt=""></a></a></li>
                     </ul>
                 </div>
                 <p class="fw-bold fs-5 mb-0 mt-2 text-center text-sm-end">Contact Center</p>

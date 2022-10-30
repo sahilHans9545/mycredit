@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesone icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/myCredit/mainTable.css">
+    <script src="../nav.js" defer></script>
+    <title>My Credit</title>
+</head>
+
+<style>
+    table td:first-child,
+    table th:first-child {
+        width: auto;
+        /* min-width: 40px; */
+        text-align: start;
+        padding: 11px 11px 11px 22px;
+    }
+
+    .main-table {
+        border-bottom: 6px solid #565C65;
+    }
+
+    .meter {
+        margin-top: 20px;
+        /* width: 400px; */
+        height: 10px;
+        border: 1px solid #C2C2C2;
+        border-radius: 10px;
+        display: flex;
+        position: relative;
+    }
+
+    .meter div:not(:nth-last-child(2)) {
+        width: 10%;
+        border-right: 2px solid #C2C2C2;
+    }
+
+    .meter-fill {
+        position: absolute;
+        left: 0%;
+        top: -0.4px;
+        height: 10px;
+        width: 73%;
+        background-color: #34b74f;
+        border-radius: 10px;
+
+    }
+
+    .meter-fill::after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        top: 0%;
+        transform: translateY(-33%);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: inherit;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav class="">
+            <div class="nav-shadow d-flex justify-content-between align-items-center  px-md-5 px-3 py-1">
+                <div class="logo"><img src="../images/logo.png" alt=""></div>
+                <div class="d-none d-md-block">
+                    <ul class="list-unstyled d-flex gap-4 mb-0 ">
+                        <li class="active-navLink mx-3"><a>Credit Repair</a></li>
+                        <li class="mx-3"><a>Loan</a></li>
+                        <li class="mx-3"><a>Shop</a></li>
+                    </ul>
+                </div>
+                <div class="user-avatar text-white">V</div>
+                <div class="menuBtn d-xl-none">Menu</div>
+            </div>
+
+            <div class=" mt-4 d-md-none">
+                <ul class="list-unstyled d-flex gap-4 mb-0 ">
+                    <li class="active-navLink mx-3"><a>Credit Repair</a></li>
+                    <li class="mx-3"><a>Loan</a></li>
+                    <li class="mx-3"><a>Shop</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menuBar mobile-menuBar  d-xl-flex justify-content-between align-items-center  px-md-5 py-3">
+            <div class="close-menu d-xl-none"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+            <ul class="list-unstyled d-flex flex-column flex-xl-row gap-xl-5 gap-lg-3 gap-4 mb-0 ">
+                <li class="active-navLink ms-3 ms-xl-0 mx-3 mx-md-0"><a href="./myLoanProfile.html"> My Loan Profile
+                    </a></li>
+                <li class="mx-3 mx-md-0"><a href="overview.html"> Overview</a></li>
+                <li class="mx-3 mx-md-0"><a href="disputeManager.html"> Dispute Manager</a></li>
+                <li class="mx-3 mx-md-0"><a href="creditors.html"> Creditors</a></li>
+                <li class="mx-3 mx-md-0"><a href=""> Credit Score</a></li>
+                <li class="mx-3 mx-md-0"><a href=""> Documents</a></li>
+                <li class="mx-3 mx-md-0"><a href="letterLibrary.html"> Letter Library</a></li>
+                <li class="mx-3 mx-md-0"><a href="disputeLetters.html"> Dispute Letters</a></li>
+            </ul>
+            <br>
+            <button class="primary-green-btn my-3 mx-xl-3 m-lg-0">Start Dispute</button>
+        </div>
+    </header>
+
+    <main class="my-5 px-3 px-lg-5 container">
+        <div class="row justify-content-between">
+            <div class="col-md-6 col-xl-5">
+                <h5 class="fw-bold">My Loan Profile</h5>
+                <div class="mt-5">
+
+                    <div class="meter-box">
+                        Down Payment
+                        <div class="meter mt-3" value="73">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div class="meter-fill">
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <h5 class="fw-bold meter-color">73%</h5>
+                            <h5 class="fw-bold">100%</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="meter-box mt-3">
+                        Credit Score
+                        <div class="meter mt-3" value="35">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div class="meter-fill"></div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <h5 class="fw-bold meter-color">35%</h5>
+                            <h5 class="fw-bold">100%</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="meter-box">
+                        Job History
+                        <div class="meter mt-3" value="86">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div class="meter-fill"></div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <h5 class="fw-bold meter-color">86%</h5>
+                            <h5 class="fw-bold">100%</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="meter-box">
+                        Debt To Income
+                        <div class="meter mt-3" value="52">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div class="meter-fill"></div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <h5 class="fw-bold meter-color">52%</h5>
+                            <h5 class="fw-bold">100%</h5>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0 ps-xl-5">
+                <h5 class="fw-bold">Your Credit Score</h5>
+                <div class="d-flex gap-md-5 gap-3 flex-wrap mt-5">
+                    <img src="../images/equifax788.png" alt="">
+                    <img src="../images/experian558.png" alt="">
+                    <img src="../images/transunion788.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="section container">
+        <h5 class="fw-bold bg-base-lightest p-2">Job History</h5>
+        <br><br><br><br><br>
+    </div>
+
+    <div class="section container">
+        <h5 class="fw-bold bg-base-lightest p-2">Debt to Income</h5>
+        <div class="mt-5 col-md-5">
+            <div class="d-flex justify-content-between gap-2 mb-1">
+                <h5 class="fw-bold">Debt-to-Income (DTI) Ratio: <span class="primary-green-text">3%</span> </h5>
+                <p>Your DTI ratio is good.</p>
+            </div>
+            <img src="../images/DTIRatio.png" alt="" class="img-fluid">
+
+            <div class="main-table overflow-auto mt-4 pt-2">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Back-End DTI Ratio:</td>
+                            <td>3%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Front-End DTI Ratio:</td>
+                            <td>2%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Total Income</td>
+                            <td>$600,000 / year or
+                                $50,000 / month</td>
+                        </tr>
+
+                        <tr>
+                            <td>Total Debt</td>
+                            <td>$19,800 / year or
+                                $1,650 / month</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="mt-4">
+            <h4 class="fw-bold">Income Breakdown</h4>
+            <img src="../images/incomeBreakdown.png" alt="">
+            <p>If you live in the U.S. and have plans to purchase a house after halted payments towards preexisting
+                rent and mortgage,
+                you can spend up to $14,000 per month on the new house, which is equivalent to a house valued up to
+                $2,447,489.*</p>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="bg-base-lightest d-flex justify-content-between align-items-center px-lg-5 px-2 py-3">
+            <ul class="d-flex flex-wrap list-unstyled mb-0">
+                <li class="px-3">Documentations</li>
+                <li class="px-3">Features</li>
+                <li class="px-3">Getting started</li>
+                <li class="px-3">About us</li>
+            </ul>
+
+            <div class="question-mark text-white fs-4 flex-shrink-0">
+                ?
+            </div>
+        </div>
+        <div class="bg-gray d-flex justify-content-between align-items-center flex-column flex-sm-row px-5 py-3">
+            <div class="footer-logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="mt-3 mt-md-0">
+                <div class="social-icons">
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-sm-end gap-2">
+                        <li><a href=""><img src="../images/icons/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="../images/icons/Twitter.png" alt=""></a></li>
+                        <li><a href=""><img src="../images/icons/youtube.png" alt=""></a></a></li>
+                        <li><a href=""><img src="../images/icons/instagram.png" alt=""></a></a></li>
+                        <li><a href=""><img src="../images/icons/wifi.png" alt=""></a></a></li>
+                    </ul>
+                </div>
+                <p class="fw-bold fs-5 mb-0 mt-2 text-center text-sm-end">Contact Center</p>
+                <div class="text-md-end text-center">
+                    <span>(800) CALL-CRED</span>
+                    &nbsp;&nbsp;
+                    <span><a href="info@mycreditapprove.com"
+                            class="text-decoration-underline">info@mycreditapprove.com</a></span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const meterBoxes = document.querySelectorAll(".meter-box");
+        console.log(meterBoxes);
+        meterBoxes.forEach((meterBox) => {
+            const meter = meterBox.querySelector(".meter");
+            const meterVal = meter.getAttribute("value")
+            const meterFill = meter.querySelector(".meter-fill");
+            meterFill.style.width = `${meterVal}%`;
+            const meterCol = meterBox.querySelector(".meter-color");
+
+            if (meterVal >= 50) {
+                meterFill.style.width = "#34b74f";
+                meterCol.style.color = "#34b74f";
+                meterFill.style.border = "1px solid #34b74f";
+            }
+            else {
+                meterFill.style.backgroundColor = "#DE5753";
+                meterCol.style.color = "#DE5753";
+                meterFill.style.border = "1px solid #DE5753"
+            }
+
+
+        })
+
+    </script>
+</body>
+
+</html>

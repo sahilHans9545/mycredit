@@ -4,15 +4,7 @@
     --gray: #E6E6E6;
 }
 
-.main{
-    /* background-color: var(--base-lightest); */
-}
 
-.required-field{
-    color: #D83933;
-    position: relative;
-    top: -4px;
-}
 
 li .grey-circle{
     width: 50px;

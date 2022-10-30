@@ -1,0 +1,55 @@
+:root{
+    --bg-light-gray: #E2E2EA;
+
+}
+
+body{
+    color: #11142D;
+}
+
+
+.product-item .product-img{
+    width: 180px;
+    height: 180px;
+    background-color: #E2E2EA;
+    border-radius: 4px;
+
+}
+
+.product-item .remove-product{
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    border-radius: 8px;
+    padding: 4px 10px ;
+    /* margin-left: 80px; */
+}
+
+.fa-minus,.fa-plus{
+    font-size: small;
+}
+
+.primary-green-btn{
+    border-radius: 8px;
+}
+
+.coupon-email{
+    color: #9A9AB0;
+    background: #FFFFFF;
+    border: 1px solid var(--primary-green) !important;
+    border-radius: 8px;
+    padding: 14px 13px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.coupon-email::placeholder{
+    color: #9A9AB0;
+}
+
+
+@media screen and (max-width:576px) {
+    .product-item .product-img{
+        width: 90px;
+        height: 90px;
+    }
+}

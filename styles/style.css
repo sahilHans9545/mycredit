@@ -13,6 +13,17 @@ body{
     font-family: 'Public Sans', sans-serif;
 }
 
+.white-box-shadow{
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.primary-green-text{
+    color: var(--primary-green);
+}
+
 .bg-primary-green{
     background-color: var(--primary-green);
 }
@@ -29,6 +40,24 @@ body{
     color: var(--blue-link);
     border-bottom: 1.5px solid var(--blue-link);
     font-weight: 500;
+}
+
+.br-8{
+    border-radius: 8px !important;
+}
+
+.br-10{
+    border-radius: 10px !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.required-field {
+    color: #D83933;
+    position: relative;
+    top: -4px;
 }
 
 ul{
@@ -58,6 +87,12 @@ a{
 
 }
 
+.base-lightest-btn {
+    background-color: var(--base-lightest);
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid var(--base-lightest);
+}
 
 
 input[type='checkbox']:checked {
@@ -232,4 +267,8 @@ footer .logo img{
         .mobile-w-100 {
             width: 100%;
         }
+}
+.line-lr {
+    border-left: 1px solid var(--base-lightest);
+    border-right: 1px solid var(--base-lightest);
 }

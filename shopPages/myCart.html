@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesone icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/shop/style.css">
+    <script src="../nav.js" defer></script>
+    <title>My Credit</title>
+</head>
+
+<style>
+    body {
+        background: #e5e5e5;
+    }
+
+    form {
+        color: var(--base-dark);
+    }
+
+    input {
+        border: 1px solid var(--base-dark) !important;
+    }
+</style>
+
+<body>
+
+    <!-- <header>
+        <nav class="">
+            <div class="nav-shadow d-flex justify-content-between align-items-center  px-md-5 px-3 py-1">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <div class="d-none d-md-block">
+                    <ul class="list-unstyled d-flex gap-4 mb-0 ">
+                        <li class="active-navLink mx-3"><a>Credit Repair</a></li>
+                        <li class="mx-3"><a>Loan</a></li>
+                        <li class="mx-3"><a>Shop</a></li>
+                    </ul>
+                </div>
+                <div class="user-avatar text-white">V</div>
+            </div>
+
+            <div class=" mt-4 d-md-none">
+                <ul class="list-unstyled d-flex gap-4 mb-0 ">
+                    <li class="active-navLink mx-3"><a>Credit Repair</a></li>
+                    <li class="mx-3"><a>Loan</a></li>
+                    <li class="mx-3"><a>Shop</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-none d-lg-flex menuBar justify-content-between align-items-center  px-md-5 py-3">
+            <ul class="list-unstyled d-flex gap-xl-4 gap-lg-3 gap-2 mb-0 ">
+                <li class="ms-0 mx-3 mx-md-0"><a href="identityIq.html"> IdentityIQ </a></li>
+                <li class="mx-3 mx-md-0"><a href="overview.html"> Overview</a></li>
+                <li class="mx-3 mx-md-0"><a href="disputeManager.html"> Dispute Manager</a></li>
+                <li class="active-navLink mx-3 mx-md-0"><a href="creditors.html"> Creditors</a></li>
+                <li class="mx-3 mx-md-0"><a href=""> Credit Score</a></li>
+                <li class="mx-3 mx-md-0"><a href=""> Documents</a></li>
+                <li class="mx-3 mx-md-0"><a href="letterLibrary.html"> Letter Library</a></li>
+                <li class="mx-3 mx-md-0"><a href="disputeLetters.html"> Dispute Letters</a></li>
+            </ul>
+            <button class="primary-green-btn">Start Dispute</button>
+        </div>
+    </header> -->
+
+    <main class="container mt-4 p-4">
+        <h2 class="fw-bold">My Cart</h2>
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="products">
+                    <div
+                        class="product-item d-flex align-items-center justify-content-md-start justify-content-between  mt-5">
+                        <div class="product-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="ps-md-5 ps-2 py-4">
+                            <h5 class="fw-bold">Product Name</h5>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <span class="fw-bold"><small>Quantity &nbsp;&nbsp; :</small></span>
+                                <div class="d-flex justify-content-between align-items-center ps-md-5 ps-2">
+                                    <span class="px-3 fw-light fs-6"><i class="fa-sharp fa-solid fa-minus"></i></span>
+                                    <span class="px-3">1</span>
+                                    <span class="px-3 fw-light fs-6"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="fw-bold pe-5">99$</h1>
+                                <button class="remove-product ms-4"><i class="fa-regular fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div
+                        class="product-item d-flex align-items-center justify-content-md-start justify-content-between  mt-5">
+                        <div class="product-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="ps-md-5 ps-2 py-4">
+                            <h5 class="fw-bold">Product Name</h5>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <span class="fw-bold"><small>Quantity &nbsp;&nbsp; :</small></span>
+                                <div class="d-flex justify-content-between align-items-center ps-md-5 ps-2">
+                                    <span class="px-3 fw-light fs-6"><i class="fa-sharp fa-solid fa-minus"></i></span>
+                                    <span class="px-3">1</span>
+                                    <span class="px-3 fw-light fs-6"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="fw-bold pe-5">99$</h1>
+                                <button class="remove-product ms-4"><i class="fa-regular fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="product-item d-flex align-items-center justify-content-md-start justify-content-between  mt-5">
+                        <div class="product-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="ps-md-5 ps-2 py-4">
+                            <h5 class="fw-bold">Product Name</h5>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <span class="fw-bold"><small>Quantity &nbsp;&nbsp; :</small></span>
+                                <div class="d-flex justify-content-between align-items-center ps-md-5 ps-2">
+                                    <span class="px-3 fw-light fs-6"><i class="fa-sharp fa-solid fa-minus"></i></span>
+                                    <span class="px-3">1</span>
+                                    <span class="px-3 fw-light fs-6"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="fw-bold pe-5">99$</h1>
+                                <button class="remove-product ms-4"><i class="fa-regular fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="product-item d-flex align-items-center justify-content-md-start justify-content-between  mt-5">
+                        <div class="product-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="ps-md-5 ps-2 py-4">
+                            <h5 class="fw-bold">Product Name</h5>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <span class="fw-bold"><small>Quantity &nbsp;&nbsp; :</small></span>
+                                <div class="d-flex justify-content-between align-items-center ps-md-5 ps-2">
+                                    <span class="px-3 fw-light fs-6"><i class="fa-sharp fa-solid fa-minus"></i></span>
+                                    <span class="px-3">1</span>
+                                    <span class="px-3 fw-light fs-6"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="fw-bold pe-5">99$</h1>
+                                <button class="remove-product ms-4"><i class="fa-regular fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5 mt-lg-0 ">
+                <div>
+                    <div class="bg-white br-8 px-md-5 px-3 py-4">
+                        <h4 class="fw-bold">Have a Coupon?</h4>
+                        <div class="mt-4"><input type="email" name="" class="coupon-email w-100" id=""
+                                placeholder="Input your email here"></div>
+                        <button class="primary-green-btn mt-4">Apply</button>
+                    </div>
+                    <div class="p-md-5 p-3 py-5 mx-md-3">
+                        <h5 class="fw-bold">Cart Totals</h5>
+                        <div class="row justify-content-between">
+                            <div class="col-4 mt-4"><span class="fw-bold">Subtotal</span></div>
+                            <div class="col-8 mt-4"><span>$400</span></div>
+                            <div class="col-4 mt-4"><span class="fw-bold">Subtotal</span></div>
+                            <div class="col-8 mt-4"><span>$400</span></div>
+                            <div class="d-flex justify-content-between flex-wrap gap-3 mt-4">
+                                <div class=""><span>Shipping to Sydney</span></div>
+                                <div><span class="primary-green-text">Change</span></div>
+                            </div>
+
+                            <div class="col-4 mt-4"><span class="fw-bold">Total</span></div>
+                            <div class="col-8 mt-4"><span>$400</span></div>
+                        </div>
+                        <button class="primary-green-btn w-100 mt-4">Checkout</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <!-- <footer class="mt-5">
+        <div class="bg-base-lightest d-flex justify-content-between align-items-center px-lg-5 px-2 py-3">
+            <ul class="d-flex flex-wrap list-unstyled mb-0">
+                <li class="px-3">Documentations</li>
+                <li class="px-3">Features</li>
+                <li class="px-3">Getting started</li>
+                <li class="px-3">About us</li>
+            </ul>
+
+            <div class="question-mark text-white fs-4 flex-shrink-0">
+                ?
+            </div>
+        </div>
+        <div class="bg-gray d-flex justify-content-between align-items-center flex-column flex-sm-row px-5 py-3">
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="mt-3 mt-md-0">
+                <div class="social-icons">
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-sm-end gap-2">
+                        <li><a href=""><img src="./images/icons/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/icons/Twitter.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/icons/youtube.png" alt=""></a></a></li>
+                        <li><a href=""><img src="./images/icons/instagram.png" alt=""></a></a></li>
+                        <li><a href=""><img src="./images/icons/wifi.png" alt=""></a></a></li>
+                    </ul>
+                </div>
+                <p class="fw-bold fs-5 mb-0 mt-2 text-center text-sm-end">Contact Center</p>
+                <div class="text-md-end text-center">
+                    <span>(800) CALL-CRED</span>
+                    &nbsp;&nbsp;
+                    <span><a href="info@mycreditapprove.com"
+                            class="text-decoration-underline">info@mycreditapprove.com</a></span>
+                </div>
+            </div>
+        </div>
+
+    </footer> -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
