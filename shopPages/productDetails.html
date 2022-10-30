@@ -353,9 +353,14 @@
             e.addEventListener("click", (tab) => {
                 console.log(tab.target)
                 target_value = tab.target.getAttribute("tabVal");
+                productTabs.forEach((el) => {
+                    el.classList.remove("active-navLink");
+                })
+                tab.target.classList.add("active-navLink")
                 if (target_value == "des") {
                     document.querySelector(".description").style.display = "block";
                     document.querySelector(".reviews").style.display = "none";
+
                 }
                 else {
                     document.querySelector(".description").style.display = "none";
